@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="701.0" style="-fx-background-color: #757575;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUpController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" prefHeight="29.0" prefWidth="268.0" text="Todo" textFill="#f8f5f5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSignUp" layoutX="575.0" layoutY="-2.0" prefHeight="44.0" prefWidth="126.0" text="Sign In" textFill="#fffdfd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="-1.0" layoutY="44.0" prefHeight="352.0" prefWidth="701.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <JFXTextField fx:id="txtUserName" alignment="BOTTOM_LEFT" focusColor="#0d41dd" layoutX="202.0" layoutY="95.0" prefHeight="33.0" prefWidth="302.0" promptText="Username" unFocusColor="#f82020">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" alignment="BOTTOM_LEFT" focusColor="#163cae" layoutX="203.0" layoutY="133.0" prefHeight="33.0" prefWidth="302.0" promptText="Password" unFocusColor="#ee0e0e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnRegister" alignment="CENTER" layoutX="200.0" layoutY="276.0" prefHeight="44.0" prefWidth="302.0" style="-fx-background-color: #4f5b62;" text="Register" textFill="#e4dede">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtConfirmPassword" alignment="BOTTOM_LEFT" focusColor="#163cae" layoutX="202.0" layoutY="171.0" prefHeight="33.0" prefWidth="302.0" promptText="Confirm password" unFocusColor="#ee0e0e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtUserFirstName" alignment="BOTTOM_LEFT" focusColor="#0d41dd" layoutX="202.0" layoutY="21.0" prefHeight="33.0" prefWidth="302.0" promptText="First name" unFocusColor="#f82020">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLastName" alignment="BOTTOM_LEFT" focusColor="#0d41dd" layoutX="201.0" layoutY="58.0" prefHeight="33.0" prefWidth="302.0" promptText="Last name" unFocusColor="#f82020">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLocation" alignment="BOTTOM_LEFT" focusColor="#0d41dd" layoutX="201.0" layoutY="232.0" prefHeight="33.0" prefWidth="302.0" promptText="Location" unFocusColor="#f82020">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXCheckBox fx:id="cbMale" checkedColor="#6b4353" layoutX="237.0" layoutY="214.0" selected="true" text="Male" unCheckedColor="#175e0c" />
+            <JFXCheckBox fx:id="cbFemale" checkedColor="#6b4353" layoutX="341.0" layoutY="215.0" text="Female" unCheckedColor="#175e0c" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

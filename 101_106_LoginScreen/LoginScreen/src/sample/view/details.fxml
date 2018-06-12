@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="694.0" style="-fx-background-color: #29434e;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.DetailsController">
+   <children>
+      <Label fx:id="detailWelcomeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="11.0" prefHeight="50.0" prefWidth="194.0" text="Welcome ..." textFill="#f8f0f0">
+         <font>
+            <Font name="Monospaced Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="50.0" prefHeight="182.0" prefWidth="705.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="222.0" fitWidth="316.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/profile_pic.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailNameId" layoutX="330.0" layoutY="26.0" prefHeight="36.0" prefWidth="333.0" text="Name:" textFill="#979292">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailAgeId" layoutX="330.0" layoutY="73.0" prefHeight="36.0" prefWidth="333.0" text="Age:" textFill="#979292">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailProfessionId" layoutX="330.0" layoutY="116.0" prefHeight="36.0" prefWidth="333.0" text="Profession:" textFill="#979292">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="310.0" prefHeight="125.0" prefWidth="705.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Hyperlink fx:id="detailWeb" accessibleText="http://www.thesecretlifeofpets.com/" layoutX="37.0" layoutY="37.0" prefHeight="15.0" prefWidth="650.0" text="Official web page" underline="true" />
+            <Hyperlink fx:id="detailTwitter" accessibleText="https://twitter.com/PetsMovie?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" layoutX="37.0" layoutY="62.0" prefHeight="25.0" prefWidth="650.0" text="TheSecretLifeofPetsMovie" underline="true" />
+            <ImageView fitHeight="27.0" fitWidth="46.0" layoutX="5.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/web.png" />
+               </image></ImageView>
+            <ImageView fitHeight="27.0" fitWidth="38.0" layoutX="3.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/twitter.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="223.0" prefHeight="88.0" prefWidth="705.0" style="-fx-background-color: #8eacbb;">
+         <children>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="22.0" prefHeight="44.0" prefWidth="696.0" text="How to find me ?" textFill="#6f5959">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

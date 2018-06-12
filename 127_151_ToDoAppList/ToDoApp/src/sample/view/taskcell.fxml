@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancorPaneCellTask" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="313.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labelTask" layoutX="32.0" layoutY="1.0" prefHeight="23.0" prefWidth="275.0" text="Task" textFill="#e8dede">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDescription" layoutX="32.0" layoutY="26.0" prefHeight="23.0" prefWidth="255.0" style="-fx-background-color: #ffffff;" text="Task description" />
+      <ImageView fx:id="iconTask" fitHeight="23.0" fitWidth="39.0" layoutX="7.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_tasks.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconDelete" fitHeight="23.0" fitWidth="31.0" layoutX="250.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_delete.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelDateCreated" layoutX="119.0" layoutY="51.0" prefHeight="23.0" prefWidth="189.0" text="Date created" textFill="#197914">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iconUpdate" fitHeight="23.0" fitWidth="31.0" layoutX="271.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon_update.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #29434e;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.LoginController">
+   <children>
+      <Label layoutX="302.0" layoutY="76.0" prefHeight="57.0" prefWidth="106.0" text="Login" textFill="#280b0b">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="loginId" focusColor="#d3126c" layoutX="179.0" layoutY="153.0" prefHeight="26.0" prefWidth="325.0" promptText="Enter your Username" unFocusColor="#9e4646">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordId" focusColor="#d3126c" layoutX="179.0" layoutY="201.0" prefHeight="26.0" prefWidth="325.0" promptText="Enter Password" unFocusColor="#9e4646">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="loginButton" layoutX="179.0" layoutY="265.0" prefHeight="42.0" prefWidth="332.0" style="-fx-background-color: #b0bec5;" text="Login" textFill="#070707">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="76.0" fitWidth="91.0" layoutX="306.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="51.0" layoutX="143.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="51.0" layoutX="143.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/password.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
